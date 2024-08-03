@@ -1,0 +1,92 @@
+/* Reset básico y estilo global */
+body {
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #333;
+  background-color: #e4fbfb;
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en la parte inferior */
+  position: fixed; /* Fija la barra de navegación en la parte superior */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Asegura que el nav esté por encima del contenido */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+  font-weight: bold;
+}
+
+/* Estilo de la barra de navegación cuando se desplaza */
+nav.scrolled {
+  background-color: #343a40; /* Cambia el color al hacer scroll */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al hacer scroll */
+}
+
+.menu {
+  margin: 0 auto;
+  margin-top: 35px;
+  width: 40%;
+  height: 10vh;
+}
+
+ul {
+  display: flex;
+  gap: 50px;
+  font-size: 20px; /* Asegúrate de añadir las unidades */
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  width: 100%;
+  height: 150vh;
+  scroll-margin-top: 15vh;
+}
+
+footer {
+  width: 100%;
+  height: 30vh;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Sombra en la parte superior */
+  color: #fff; /* Color del texto en el footer */
+  text-align: center; /* Alineación del texto al centro */
+  padding: 20px; /* Espaciado interno del footer */
+  position: relative; /* Asegura que la sombra se aplique correctamente */
+}
+
+.home,
+.skils,
+.proyects {
+  margin: 0 auto;
+  margin-top: 8%;
+  width: 70%;
+  height: 70vh;
+}
+#caja1 {
+  display: flex;
+}
+.foto {
+  width: 40%;
+  height: 70vh;
+  border-radius: 100%;
+  margin-right: 15px;
+  }
+.descripcion {
+
+  width: 70%;
+  height: 70vh;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+img{
+  height: 70vh;
+}
